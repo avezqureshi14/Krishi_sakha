@@ -1,1 +1,1 @@
-web gunicorn mainapp.wsgi --log-file -
+web gunicorn krishisakha.wsgi --log-file -
