@@ -1,0 +1,37 @@
+{% extends 'mainapp/main.html' %} {% load static %} {% block content %}
+<home class="home">
+    <img src="{% static 'images/logo.png'%}">
+    <p>
+        
+
+Krishi Sakha is a web application designed to provide crop recommendations to farmers based on their soil and weather conditions. It uses a machine learning model that takes into account various factors such as soil pH, temperature, humidity, and rainfall, as well as the levels of potassium, nitrogen, and phosphorus in the soil.
+
+The application can be used by farmers to input their soil and weather data, and then receive personalized crop recommendations based on their specific conditions. This can help farmers make informed decisions about which crops to plant, and how to manage their soil and fertilizers.
+
+The machine learning model used by Krishi Sakha is trained on a large dataset of crop yields and weather conditions, which allows it to provide accurate recommendations based on real-world data. Overall, Krishi Sakha is an innovative and useful tool for farmers looking to optimize their crop yields and improve their agricultural practices.
+    </p>
+</home>
+<about class='about'>
+    <h1>About us</h1>
+    <team>
+        <h1>Kamikaze Coders</h1>
+        <p>Team kamikaze coders is a group of the boys who are currently pursuing engineering.
+            Krishi sakha is developed by Kamikaze coders.
+
+        </p>
+        <memb>
+            Team members:<br>
+            <a href='https://www.linkedin.com/in/yash-malbhage-2a8618213' class="names">1.Yash Malbhage (Web developer)</a>
+            <br>
+            <a href='https://www.linkedin.com/in/aniket-g-692422122' class='names'>2.Aniket Galdhar (ML Engineer)</a>
+            <br>
+            <a href='https://www.linkedin.com/in/sarthak-gadge-b46695206' class='names'>3.Sarthak Gadge (Ui/Ux designer)</a>
+
+
+        </memb>
+    </team>    
+
+
+</about>
+
+{% endblock content %}

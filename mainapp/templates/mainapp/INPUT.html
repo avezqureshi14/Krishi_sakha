@@ -1,0 +1,30 @@
+{% extends 'mainapp/main.html' %} {% load static %} {% block content %}
+<!-- <h3>Store</h3> -->
+<h1>Enter the following Parameters:</h1>
+<form action="{% url 'result' %}" method="post">
+    {% csrf_token %}
+
+    <label for="n_ratio">N - Ratio of Nitrogen Content in Soil:</label>
+    <input type="number" id="n_ratio" name="n_ratio" required><br><br>
+
+    <label for="p_ratio">P - Ratio of Phosphorous Content in Soil:</label>
+    <input type="number" id="p_ratio" name="p_ratio" required><br><br>
+
+    <label for="k_ratio">K - Ratio of Potassium Content in Soil:</label>
+    <input type="number" id="k_ratio" name="k_ratio" required><br><br>
+
+    <label for="temperature">Temperature in Degree Celsius:</label>
+    <input type="number" id="temperature" name="temperature" required><br><br>
+
+    <label for="humidity">Relative Humidity in %:</label>
+    <input type="number" id="humidity" name="humidity" required><br><br>
+
+    <label for="ph">pH Value of the Soil:</label>
+    <input type="number" id="ph" name="ph" required><br><br>
+
+    <label for="rainfall">Rainfall in mm:</label>
+    <input type="number" id="rainfall" name="rainfall" required><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+{% endblock content %}
